@@ -1,14 +1,13 @@
-public class Aluno {
+import java.util.UUID;
+
+public class Aluno extends Pessoa{
 	//Atributos    
-	private String matricula , nome , naturalidade;
+	private String matricula;
 		
 	//Métodos
-	public Aluno ( String nome , String naturalidade ) {
-			this.nome = nome;
-			this.naturalidade = naturalidade;
+	public Aluno ( String nome , String nacionalidade , String naturalidade ) {
+		super ( nome , nacionalidade , naturalidade );
+		this.matricula = UUID.randomUUID().toString();
 	}
-		@Override
-		public String toString () {
-			return String.format("%s(%s)", nome , naturalidade );
-		}
-	} 
+	
+} 

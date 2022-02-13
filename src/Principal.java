@@ -1,3 +1,5 @@
+
+
 public class Principal{
     //Atributos
 	private static Aluno aluno1 , aluno2 , aluno3 , aluno4 , aluno5 , aluno6 , aluno7 , aluno8 , aluno9;

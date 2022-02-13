@@ -1,3 +1,5 @@
+import java.util.*;
+
 class Escola {
     //atributos
     private String nome, CNPJ;
@@ -39,7 +41,7 @@ class Escola {
         discentes.remove(aluno);
     }
 
-    public void agruparAlunos{
+    public void agruparAlunos(){
         Map <String,List<Aluno>> agrupamento = new HashMap <>();
         for (Aluno a: discentes) {
             if(!agrupamento.containsKey (a.recuperarNaturalidade())){
@@ -48,5 +50,9 @@ class Escola {
             agrupamento.get(a.recuperarNaturalidade()).add(a);
         }
         System.out.println("Resultado do agrupamento por naturalidade: "+ agrupamento );
+    }
+
+
+    public void matricularAlunos(Aluno aluno8) {
     }
 }
